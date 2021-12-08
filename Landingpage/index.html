@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/11e8571af7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/style.css">
+
+  <title>MCU Movie Reccomendations</title>
+</head>
+
+<body>
+  <!-- header -->
+<header class ="header">
+    <h1>MCU Movie Reccomendations</h1>
+  </header>
+
+  <div>
+    <div class="row">
+      <!-- sidebar -->
+      <div class="col-md-3 col-xl-2 pt-3">
+        <!-- search form -->
+        <form id="search-form" role="search" class="d-flex align-items-center mb-3">
+          <input type="search" class="form-control" id="search-input" placeholder="Search">
+          <button type="submit" class="btn btn-primary ml-1"><span class="fas fa-search"></span></button>
+        </form>
+
+        <!-- search history -->
+        <div id="search-history" class="btn-group-vertical w-100 justify-content-start history-scrollable"></div>
+        
+        <div class="Facets" id="facets"> <!--The Search Criteria-->
+            <!-- <div class="Time">
+                <h3>Chronological or Release Date</h3>
+                <select name="Criteria0" id="Criteria0">
+                    <option value="option1">Chronological</option>
+                    <option value="option2">Release Date</option>
+                </select>
+            </div>
+            
+            <div class="Criteria1">
+                <h1>Criteria1</h1>
+                <select name="Criteria1" id="Criteria1">
+                    <option value="option1">option 1</option>
+                    <option value="option2">option 2</option>
+                    <option value="option3">option 3</option>
+                    <option value="option4">option 4</option>
+                </select>
+            </div>  --> 
+
+            <div class="Time">
+                <h3>Viewing Style</h3>
+                <input type="checkbox" id="Chronological" value="Chronological"><label for="Chronological"> Chronological Order</label><br>
+                <input type="checkbox" id="Release" value="Release"><label for="Release"> Date of Release</label><br>
+            </div>
+
+            <div class="Characters">
+                <!-- Used this article that ranks the top characters for the selection https://screenrant.com/ten-best-characters-mcu-according-ranker/ -->
+                <h3>Characters</h3>
+                <input type="checkbox" id="blackPanther" value="blackPanther"><label for="blackPanther"> Black Pather</label><br>
+                <input type="checkbox" id="rocketRaccoon" value="rocketRaccoon"><label for="rocketRaccoon"> Rocket Raccoon</label><br>
+                <input type="checkbox" id="blackWidow" value="blackWidow"><label for="blackWidow"> Black Widow</label><br>
+                <input type="checkbox" id="doctorStrange" value="doctorStrange"><label for="doctorStrange"> Doctor Strange</label><br>
+                <input type="checkbox" id="stanLee" value="stanLee"><label for="stanLee"> Stan Lee</label><br>
+                <input type="checkbox" id="spiderMan" value="spiderMan"><label for="spiderMan"> Spider-Man</label><br>
+                <input type="checkbox" id="captainAmerica" value="captainAmerica"><label for="captainAmerica"> Captain America</label><br>
+                <input type="checkbox" id="loki" value="loki"><label for="loki"> Loki</label><br>
+                <input type="checkbox" id="thor" value="thor"><label for="thor">Thor</label><br>
+                <input type="checkbox" id="ironMan" value="ironMan"><label for="ironMan"> Iron Man</label><br>
+            </div>
+
+            <div class="Duration">
+                <!-- Here is the official runtimes of each movie https://screenrant.com/mcu-length-marvel-movies-total-runtime/ -->
+                <h3>Max Duration</h3>
+                <input type="checkbox" id="twohours" value="twohours"><label for="twohours">2 hours</label><br>
+                <input type="checkbox" id="twohours20min" value="twohours20min"><label for="twohours20min"> 2 hours and 20 min.</label><br>
+                <input type="checkbox" id="twohours40min" value="twohours40min"><label for="twohours40min"> 2 hours and 40 min.</label><br>
+                <input type="checkbox" id="threeHours" value="threeHours"><label for="threeHours"> 3 hours </label><br>
+            </div>
+
+        </div>
+      </div>
+
+      <!-- Main content-->
+    <main class="main">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col" id="Poster1">
+                    <h3>Poster1</h3>
+                </div>
+
+                <div class="col" id="Poster2">
+                    <h3>Poster2</h3>
+                </div>
+
+                <div class="col" id="Poster3">
+                    <h3>Poster3</h3>
+                </div>
+
+                <div class= "col" id="Poster4">
+                    <h3>Poster4</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
