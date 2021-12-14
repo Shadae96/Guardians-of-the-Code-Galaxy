@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wiki App</title>
+  </head> 
+<header>
+    <div>
+        <h1>Wiki App</h1>
+    </div>
+</header>
+
+<body>
+   <h1>Wikipedia Search App</h1>
+
+   <form class="search-form js-search-form">
+    <input placeholder="Type a keyword and press Enter to search" type="search" value= "marvel" class="search-input js-search-input" autofocus />
+    <button type="button" id="button">Search </button>
+  </form>
+
+<div class= "wiki-article">
+    <div class="wiki-title">
+      <h2 class="article-title">${title}</h2>
+      <div class="article-content">
+        <h3 class = "snippet">${snippet} </h3>
+          <div class="read-more">
+              <a href="#">
+                  <h4 class="article-link">${link}</h3>
+              </a>
+            </div> 
+      </div>
+  </div>
+</div>
+
+<script src="./script.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  </body>
+  </html>
