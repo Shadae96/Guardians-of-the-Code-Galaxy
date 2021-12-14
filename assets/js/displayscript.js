@@ -2,8 +2,6 @@ var TMDB_KEY = config.SECRET_TMDB_KEY;
 
 const BASE_URL = 'https://api.themoviedb.org/3';
 
-//https://api.themoviedb.org/3/search/movie?api_key=2cc4c4492608423940547980d7f61fcf&query=Spider+Man
-
 const API_URL = BASE_URL + '/search/movie?' + TMDB_KEY + '&query=Spider+Man';
 
 const BASE_IMG_URL = 'https://image.tmdb.org/t/p/w500';
