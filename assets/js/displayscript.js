@@ -2,13 +2,16 @@ var TMDB_KEY = config.SECRET_TMDB_KEY;
 
 const BASE_URL = 'https://api.themoviedb.org/3';
 
-const API_URL = BASE_URL + '/search/movie?' + TMDB_KEY + '&query=Spider+Man';
+//const API_URL = BASE_URL + '/search/movie?' + TMDB_KEY + '&query=Spider+Man';
+//const API_URL = BASE_URL + '/search/movie?' + TMDB_KEY + movie;
 
 const BASE_IMG_URL = 'https://image.tmdb.org/t/p/w500';
 
 
+
+
 // *********************************************************************************** //
-//                                         
+
 const movieCards = document.querySelector("#container");
 
 function createCard({title, release_date, poster_path, overview}) {
@@ -44,27 +47,41 @@ function createCard({title, release_date, poster_path, overview}) {
     `;
     
     movieCards.innerHTML += code;
-    console.log(movieCards);
+//    console.log(movieCards);
 }
 
+// *********************************************************************************** //
+// ***************************Using JavaScript**************************************** //
 
-fetchMovies(API_URL);
+document.getElementById('submit').onclick = function() {
+    var radios = document.getElementsByName('movie');
+    var movie;
+    for (var radio of radios)
+    {
+        if (radio.checked) {
+            var movie=(radio.value);
+        }
+    }
+    
 
-function fetchMovies(url) {
-    fetch(url).then(res => res.json()).then(data => {
-        console.log(data.results);
+    console.log(movie);
+    const API_URL = BASE_URL + '/search/movie?' + TMDB_KEY + '&query=' + movie;
+    fetchMovies(API_URL);
 
-        data.results.forEach(movieItem => {
+}
+// *********************************************************************************** //
+// *********************************************************************************** //
+
+
+    function fetchMovies(url) {
+        movieCards.innerHTML = "";
+
+        fetch(url).then(res => res.json()).then(data => {
+            console.log(data.results);
+
+            data.results.forEach(movieItem => {
             createCard(movieItem);
             }); 
-    
-    })
-}
-
-
-function displayMovies(data) {
-    data.forEach(movieItem => {
-        createCard()
-        console.log(release_date);
-    }); 
-}
+        
+        })
+    }

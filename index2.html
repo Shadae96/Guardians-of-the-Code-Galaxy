@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name="robots" content="noindex">
+    <link rel="shortcut icon" type="image/x-icon" />
+    <link rel="mask-icon" type="" />
+    <link rel="canonical" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel='stylesheet' href="https://nsoroma.github.io/Guardians-of-the-Code-Galaxy/assets/css/cardstyle.css">
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+
+    <title>Marvel Cinematic Universe Movie</title>
+</head>
+
+<body>
+    
+
+    <div>
+        <h3 class="text-center">Search Details For Any Movie</h3><!--Search by Any Title-->
+
+        <input type="radio" value="Black Panther" name="movie" /> Black Panther</label>
+        <input type="radio" value="Guardians of the Galaxy" name="movie" /> Guardians of the Galaxy</label>
+        <input type="radio" value="Black Widow" name="movie" /> Black Widow</label>
+        <input type="radio" value="Doctor Strange" name="movie" /> Doctor Strange</label>
+        <input type="radio" value="Spider-Man" name="movie" /> Spider-Man: Homecoming</label>
+        <input type="radio" value="Captain America" name="movie" /> Captain America: Civil War</label>
+        <input type="radio" value="Thor" name="movie" /> Thor: Ragnarok</label>
+        <input type="radio" value="Iron Man" name="movie" /> Iron Man</label>
+        <input type="radio" value="Ant-Man" name="movie" /> Ant-Man</label>
+        <input type="radio" value="Wolverine" name="movie" /> Wolverine</label>
+        <input type="radio" value="Hulk" name="movie" /> Hulk</label>
+        <br><br>
+        <button id="submit">Submit</button>
+
+    </div>
+
+    <div id="result"> </div>
+
+    <script>
+        function retrieveMovie() {
+            var ele = document.getElementsByName('movie');
+             console.log(ele); 
+            for(i = 0; i < ele.length; i++) {
+                if(ele[i].checked)
+                document.getElementById("result").innerHTML
+                        = "Movie: "+ele[i].value;
+                        
+            }
+       }
+    </script>
+
+<main id="container">
+    <!-- 1 ************************************************************************************************  -->
+
+</main>
+<!-- <img src="/assets/images/blue_long_2-9665a76b1ae401a510ec1e0ca40ddcb3b0cfe45f1d51b77a308fea0845885648.svg" width="200px" > -->
+
+    <script>const testrw=window.location.host;
+    console.log(testrw);
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src='https://nsoroma.github.io/Guardians-of-the-Code-Galaxy/config.js'>console.log(config);</script>
+    <script src="/assets/js/displayscript.js"></script>
+    
+
+<!--    <script src='https://nsoroma.github.io/Guardians-of-the-Code-Galaxy/assets/js/displayscript.js'></script> -->
+
+
+</body>
+
+</html>
