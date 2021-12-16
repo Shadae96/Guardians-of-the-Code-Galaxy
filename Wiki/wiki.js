@@ -11,8 +11,9 @@ const form = document.querySelector('.js-search-form');
 startButton.addEventListener("click",goWiki);
 
 console.log(inputValue);
+console.log(url)
 
-function goWiki(url){
+function goWiki(){
     fetch(url)
       .then((res) => res.json()).then((data) => {
         console.log(data.results);
@@ -21,8 +22,8 @@ function goWiki(url){
         console.log(err);
       });
 
-    const results= Response.json();
-    return results;
+    // const results= Response.json();
+    // return results;
 };
 
 
