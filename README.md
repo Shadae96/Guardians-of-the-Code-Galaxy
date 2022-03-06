@@ -22,7 +22,7 @@
 ---
 ## __Description__
 
-Our project is a collaborative coding effort among  5 group members to create an application to assist casual movie-goers in preparing for optimal viewing  of the next Marvel film with friends, to add more context and background information about films and characters in the broader Marvel Cinematic Universe so that I can have an enjoyable experience and discussions.
+This project is a collaborative coding effort among  5 group members to create an application to assist casual movie-goers in preparing for optimal viewing  of the next Marvel film with friends, to add more context and background information about films and characters in the broader Marvel Cinematic Universe so that I can have an enjoyable experience and discussions.
 
 
 We developed this application because we realized that the Marvel Cinematic Universe is broad and complex for casual viewers and movie-goers.  The movies are often box-office hits, with expansive story-lines, characters and plots.  We wanted to provide a resource that could be useful to add to the user's complete experience in a simple method to aid users in deciding the entertainment potential of viewing the films in theaters or streaming elsewhere.
